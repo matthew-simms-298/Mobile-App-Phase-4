@@ -1,7 +1,11 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
+ * 
+ * Documentation for React Native and TypeScript:
+ * Sample React Native App: https://github.com/facebook/react-native
+ * React Documentation: https://reactjs.org/docs/getting-started.html
+ * React Native Documentation: https://reactnative.dev/docs/getting-started
+ * TypeScript Documentation: https://www.typescriptlang.org/docs/
+ * 
  * @format
  */
 
@@ -25,10 +29,12 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+//Exapmle of a component with props using TypeScript and specifing the type of the props
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
+//Example of a component with props using TypeScript
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
